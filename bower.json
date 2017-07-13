@@ -1,0 +1,23 @@
+{
+  "name": "fudapp",
+  "authors": [
+    "Oscar Gallardo <raxo_777_93@hotmail.com>" 
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.4"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app='fudapp'>
+	<head>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilos.css">
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<div id="header">
+  				<div class="logo">
+    				<p>Fud<span>app</span></p>
+  				</div>
+  				<div>
+  					<a href="#!/login">Iniciar sesión</a>
+  				</div>
+			</div>
+		</header>  <!-- FIN DEL HEAD -->
+		<div class='container' style='width: 100%;'>
+			<div class="sidebar col-xs-4">
+	    		<ul id="nav">
+	      			<li><a href="#">Inicio</a></li>
+	      			<li><a href="#!/recetas/nuevo">Nueva receta</a></li>
+	     			<li><a href="#">Media</a></li>
+	      			<li><a href="#">Media</a></li>
+	    		</ul>
+	  		</div>
+			<div ng-view class='col-xs-8'></div>
+		</div>
+
+
+		<!-- estas son dependencias -->
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="js/app.js"></script>
+		
+		<!-- estos son controladores -->
+		<script src="js/views/about/about.js"></script>
+		<script src="js/views/index/index.js"></script>
+		<script src="js/views/recetas/recetas.js"></script>
+		<script src="js/views/recetas_new/recetasNuevos.js"></script>
+		<script src="js/views/login/login.js"></script>
+
+		<script src="js/components/receta-item/receta-item.js"></script>
+	</body>
+</html>
